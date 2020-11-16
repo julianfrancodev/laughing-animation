@@ -32,21 +32,21 @@ class Page1Page extends StatelessWidget {
           //   child: child,
           // );
 
-          // return ScaleTransition(
-          //   child: child,
-          //   scale: Tween<double>(begin: 0.0, end: 1.0).animate(curvedAnimation),
-          // );
+          return ScaleTransition(
+            child: child,
+            scale: Tween<double>(begin: 0.0, end: 1.0).animate(curvedAnimation),
+          );
           //
           // return RotationTransition(
           //   turns: Tween<double>(begin: 0.0, end: 10).animate(curvedAnimation),
           //   child: child,
           // );
-
-          return FadeTransition(
-            opacity:
-                Tween<double>(begin: 0.0, end: 1.0).animate(curvedAnimation),
-            child: child,
-          );
+          //
+          // return FadeTransition(
+          //   opacity:
+          //       Tween<double>(begin: 0.0, end: 1.0).animate(curvedAnimation),
+          //   child: child,
+          // );
         });
   }
 }
